@@ -36,7 +36,15 @@ bool palindrome(string s) {
     return pCheck(0, s);
 }
 
+int fibonacci(int n) {
+    if(n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
 int main() {
-    string s = "abcba";
-    cout << palindrome(s);
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    cout << endl;
+    cout << fibonacci(n);
 }
