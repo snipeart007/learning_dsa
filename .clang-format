@@ -1,0 +1,20 @@
+
+Language: Cpp
+# Base on LLVM for a clean, standard foundation
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 80
+
+# Custom brace behavior
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: false      # Attach function brace
+  AfterControlStatement: false # Attach if/for/while brace
+  AfterClass: false         # Attach class brace
+  BeforeElse: true          # Force 'else' to a new line
+  BeforeCatch: true         # Force 'catch' to a new line
+  IndentBraces: false       # Do not indent the braces themselves
+
+# Ensures the else doesn't get sucked back up to the same line
+AllowShortIfStatementsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false

@@ -3,3 +3,8 @@ output/
 
 # Ignore all executable files
 *.exe
+*.obj
+*.pdb
+*.ilk
+
+.cph/
