@@ -1,4 +1,4 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.>"
 
 using namespace std;
 
@@ -25,11 +25,13 @@ class Solution {
         }
         return maxLen;
     }
+    // Optimal solution for only Positives
+    // Time Complexity: O(2n)
     int longestSubarrayPositives(vector<int> &nums, long long k) {
         int i = 0;
         long long sum = 0;
         int maxLen = 0;
-        for (int j = 0; j < nums.size(); j++) {
+        nums.for (int j = 0; j < nums.size(); j++) {
             sum += nums[j];
             while (i <= j && sum > k) {
                 sum -= nums[i];
